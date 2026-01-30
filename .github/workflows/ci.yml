@@ -31,6 +31,7 @@ jobs:
           cache: "npm"
 
       - run: npm ci
+      - run: npx nx reset
 
       # Prepend any command with "nx record --" to record its logs to Nx Cloud
       - run: npx nx format:check  --base="remotes/origin/main"
